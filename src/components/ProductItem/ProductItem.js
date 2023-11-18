@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./ProductItem.module.scss";
 import ic_check from "../../assets/check.png";
+import { useDispatch } from "react-redux";
+import { addNewProduct } from "../../store/reducers/ShopCardSlice";
+import { updateStatusProduct } from "../../store/reducers/ShopProductSlice";
 
 const ProductsItem = ({ data }) => {
-  const [active, setActive] = useState(false);
+  const dispatch = useDispatch();
 
-  const addItem = () => setActive(!active);
+  const addProductToCart = () => {
+    dispatch(addNewProduct(data));
+    dispatch(updateStatusProduct({ id: data.id, status: true }));
+  };
+
   return (
     <div className={classes.prod__container}>
       <div
@@ -22,16 +29,16 @@ const ProductsItem = ({ data }) => {
         </div>
         <button
           className={`${
-            classes[active ? "prod__container-custom-btn-hidden" : ""]
+            classes[data.inCart ? "prod__container-custom-btn-hidden" : ""]
           }
             ${classes["prod__container-custom-btn"]}`}
-          onClick={addItem}
+          onClick={addProductToCart}
         >
           ADD TO CARD
         </button>
         <div
           className={`${
-            classes[active ? "" : "prod__container-custom-check-hidden"]
+            classes[!data.inCart && "prod__container-custom-check-hidden"]
           } ${classes["prod__container-custom-check"]}`}
         >
           <img src={ic_check} alt="none" />

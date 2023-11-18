@@ -12,6 +12,7 @@
             width: 100%;
             height: auto;
             transform: rotate(-20deg) translate(-1rem, 0);
+            filter: drop-shadow(0 30px 30px rgba(0,0,0,.3));
         }
     }
 
@@ -60,6 +61,7 @@
             box-shadow: -3px 4px 17px -10px rgba(0,0,0,0.98);
             -webkit-box-shadow: -3px 4px 17px -10px rgba(0,0,0,0.98);
             -moz-box-shadow: -3px 4px 17px -10px rgba(0,0,0,0.98);
+            opacity: 0.8;
         }
 
         &-btn-hidden {
@@ -78,7 +80,6 @@
             background-color: #EFC845;
             padding: 0.5rem;
             border-radius: 5rem;
-            z-index: 2;
 
             img {
                 width: 85%;
