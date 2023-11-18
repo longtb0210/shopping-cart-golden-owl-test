@@ -46,9 +46,11 @@ const ShoppingCardItem = props => {
 
   return (
     <div
+      key={props.data.id}
       className={`${classes.container__card} ${
         classes[disappear && "container__card-disappear"]
       }`}
+      style={{ marginTop: props.firstItem ? 40 : 0 + "px" }}
     >
       <div className={classes["container__card-block"]}>
         <div

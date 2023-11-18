@@ -4,7 +4,7 @@ import ic_nike from "../../assets/nike.png";
 
 const CardItem = props => {
   return (
-    <div className={classes["container__card-content"]}>
+    <div key={props.title} className={classes["container__card-content"]}>
       <div className={classes["container__card-content-heading"]}>
         <img src={ic_nike} alt="nike" />
         <div className={classes["flex-items"]}>

@@ -14,7 +14,7 @@ const ProductsItem = ({ data }) => {
   };
 
   return (
-    <div className={classes.prod__container}>
+    <div key={data.id} className={classes.prod__container}>
       <div
         className={classes["prod__container-img"]}
         style={{ backgroundColor: data.color }}

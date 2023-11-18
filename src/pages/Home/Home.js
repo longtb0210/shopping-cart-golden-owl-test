@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 import classes from "./Home.module.scss";
 
@@ -34,16 +34,24 @@ const Home = () => {
 
   return (
     <div className={classes.container}>
-      <CardItem title="Our Products">
+      <CardItem key="our-products" title="Our Products">
         {products.map((item, index) => (
-          <ProductsItem key={item.id} data={item} />
+          <ProductsItem key={index} data={item} />
         ))}
       </CardItem>
-      <CardItem title="Your card" price={productInCart.totalPrice.toFixed(2)}>
-        {productInCart.totalPrice === 0
+      <CardItem
+        key="your-cart"
+        title="Your card"
+        price={productInCart.totalPrice.toFixed(2)}
+      >
+        {productInCart?.totalPrice === 0
           ? "Your cart is empty"
-          : productInCart.list.map(item => (
-              <ShoppingCartItem key={item.id} data={item} />
+          : productInCart?.list.map((item, index) => (
+              <ShoppingCartItem
+                key={index}
+                data={item}
+                firstItem={Number(index) === 0}
+              />
             ))}
       </CardItem>
     </div>
