@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import classes from "./ShoppingCartItem.module.scss";
 import ic_remove from "../../assets/minus.png";
 import ic_add from "../../assets/plus.png";
@@ -46,7 +46,6 @@ const ShoppingCardItem = props => {
 
   return (
     <div
-      key={props.data.id}
       className={`${classes.container__card} ${
         classes[disappear && "container__card-disappear"]
       }`}
@@ -98,4 +97,4 @@ const ShoppingCardItem = props => {
   );
 };
 
-export default ShoppingCardItem;
+export default memo(ShoppingCardItem);

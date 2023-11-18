@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import classes from "./ProductItem.module.scss";
 import ic_check from "../../assets/check.png";
 import { useDispatch } from "react-redux";
@@ -14,7 +14,7 @@ const ProductsItem = ({ data }) => {
   };
 
   return (
-    <div key={data.id} className={classes.prod__container}>
+    <div className={classes.prod__container}>
       <div
         className={classes["prod__container-img"]}
         style={{ backgroundColor: data.color }}
@@ -48,4 +48,4 @@ const ProductsItem = ({ data }) => {
   );
 };
 
-export default ProductsItem;
+export default memo(ProductsItem);

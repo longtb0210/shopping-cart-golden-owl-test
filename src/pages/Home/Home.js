@@ -48,7 +48,7 @@ const Home = () => {
           ? "Your cart is empty"
           : productInCart?.list.map((item, index) => (
               <ShoppingCartItem
-                key={index}
+                key={item.id}
                 data={item}
                 firstItem={Number(index) === 0}
               />

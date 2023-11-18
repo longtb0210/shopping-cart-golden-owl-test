@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import classes from "./CardItem.module.scss";
 import ic_nike from "../../assets/nike.png";
 
@@ -19,4 +19,4 @@ const CardItem = props => {
   );
 };
 
-export default CardItem;
+export default memo(CardItem);
