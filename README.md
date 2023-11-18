@@ -9,6 +9,21 @@ You can perform live demo here. [Live Demo](https://shoes-shop-nike-v1-dogutd1qh
 # Screenshots
 ![image](https://github.com/longtb0210/shopping-cart-golden-owl-test/assets/74775916/1843f8c5-fe00-4a78-a18d-0cb73ac69ca3)
 
+# Tech Stack
+- ReactJS
+- SASS module
+- Redux toolkit
+
+# Nice to have
+- Basic responsive design
+- Smooth animations
+- Deploy the application to Vercel
+
+# Other
+- Basic performance optimization
+- Technologies: ReactJS, SCSS module, Redux toolkit
+
+# Run Locally
 ### `git clone`
 Clone project: git clone https://github.com/longtb0210/shopping-cart-golden-owl-test
 
