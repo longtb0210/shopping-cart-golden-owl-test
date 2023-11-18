@@ -4,7 +4,7 @@
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. Developed and maintained by Facebook, React has gained widespread adoption in the web development community for its simplicity, performance, and component-based architecture. It's particularly well-suited for creating single-page applications where user interfaces can be dynamic and responsive.
 
 # Demo
-You can perform live demo here. [Live Demo](https://shoes-shop-nike-v1-dogutd1qh-longtb0210s-projects.vercel.app)
+You can perform live demo here.[Live Demo](https://golden-owl-puce.vercel.app/))
 
 # Screenshots
 ![image](https://github.com/longtb0210/shopping-cart-golden-owl-test/assets/74775916/1843f8c5-fe00-4a78-a18d-0cb73ac69ca3)
