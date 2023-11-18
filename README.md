@@ -1,4 +1,5 @@
-# Link deploy: https://shoes-shop-nike-v1-dogutd1qh-longtb0210s-projects.vercel.app/
+# Link deploy
+Open: https://shoes-shop-nike-v1-dogutd1qh-longtb0210s-projects.vercel.app/
 
 # Getting Started with Create React App
 
