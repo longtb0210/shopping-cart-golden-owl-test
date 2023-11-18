@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import classes from "./ShoppingCartItem.module.scss";
 import ic_remove from "../../assets/minus.png";
 import ic_add from "../../assets/plus.png";
